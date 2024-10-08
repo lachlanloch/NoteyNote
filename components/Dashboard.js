@@ -134,14 +134,14 @@ return <Loading/>
         <div key={data.id} > 
         <div className='border border-solid bg-yellow-100 rounded-lg border-slate-400 '>
         <div className='flex justify-between items-start border-b-2 border-black w-full min-h-[25px] '>
-            <h1 className='p-1 whitespace-pre-wrap'>{data.title}</h1>
+            <h1 className='p-1 whitespace-pre-wrap break-all'>{data.title}</h1>
             <div className='flex space-x-2 ml-auto'>
               <i className="fa-solid fa-trash text-red-600 p-1" onClick={() =>{
                     handleDeleteData(data.id)
                   }}></i>
             </div>
           </div>
-        <p className='min-h-[100px] my-2 whitespace-pre-wrap p-1'>{data.text}</p>
+        <p className='min-h-[100px] my-2 whitespace-pre-wrap p-1 break-all'>{data.text}</p>
         </div>
         <p className='text-xs text-center'>{data.day}/{data.month}/{data.year}</p>
         </div>
